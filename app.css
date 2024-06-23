@@ -1,0 +1,368 @@
+:root {
+    --primaryColor: #860480;
+    --secondaryColor: #df6eee;
+    --whiteColor: #fff;
+    --blackColor: #222;
+    --softGreenColor: #e1c6ec;
+    --darkGreyColor: #a7a7a7;
+    --greyColor: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    left: 0;
+    top: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-nav, .sidebar-logout {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav a, .sidebar-logout a {
+    text-decoration: none;
+    color: var(--whiteColor);
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding: 5% 8%;
+    margin: 0.5rem 0;
+}
+
+.sidebar-nav a:hover, .sidebar-logout a:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 50px;
+}
+
+/* Main Header */
+
+.main {
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    padding: 2%;
+    margin-left: 250px;
+    background-color: var(--softGreenColor);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.search {
+    width: 60%;
+    height: 40px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search input {
+    border: none;
+    width: 80%;
+    height: 100%;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.search-btn {
+    width: 20%;
+    border: none;
+    background-color: var(--secondaryColor);
+    color: var(--whiteColor);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart , .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--primaryColor);
+    background-color: var(--whiteColor);
+    border-radius: 50%;
+    font-size: 20px;    
+}
+
+.search:hover {
+    box-shadow: rgba(149, 187, 158, 0.2) 0px 8px 24px;
+}
+
+.cart:hover , .user:hover {
+    box-shadow: rgba(149, 187, 158, 0.2) 0px 8px 24px;
+    color: var(--secondaryColor);
+}
+
+/* Main highlight */
+.main-highlight {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight-arrow i {
+    font-size: 26px;
+    color: var(--blackColor);
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.highlight-arrow i:hover {
+    color: var(--primaryColor);
+}
+
+.highlight-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    gap: 1.5rem;
+    display: flex; 
+    border-radius: 8px;  
+    padding: 1%; 
+}
+
+.highlight-card {
+    width: 80%;
+    height: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--greyColor);
+    border-radius: 8px;
+    padding: 1%;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.highlight-card:hover {
+    background-color: var(--whiteColor);
+}
+
+.highlight-card:hover h4 {
+    color: var(--secondaryColor);
+}
+
+.highlight-img {
+    object-fit: cover;
+    object-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.highlight-desc h4 {
+    color: var(--primaryColor);
+}
+
+.highlight-desc p {
+    font-size: 12px;
+}
+
+/* Main menus */
+
+.main-menus {
+    padding: 2%;
+    border-radius: 20px;
+    background-color: var(--greyColor);
+    min-width: 100%;
+}
+
+.main-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.filter-wrapper {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
+    overflow-x: hidden;
+}
+
+.filter-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    height: 100%;
+    cursor: pointer;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+}
+
+.filter-card:hover {
+    background-color: var(--primaryColor);
+}
+
+.filter-card:hover .filter-icon {
+    background-color: var(--whiteColor);
+}
+
+.filter-icon {
+    font-size: 30px;
+    width: 80%;
+    height: 60%;
+    background-color: var(--softGreenColor);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-detail {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.detail-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2%;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.detail-card {
+    min-width: 280px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+    margin: 1% 0;
+}
+
+.detail-img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    filter: brightness(0.8);
+}
+
+.detail-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3%;
+}
+
+.detail-sub {
+    font-size: 16px;
+    letter-spacing: 0.5;
+    margin: 1% 0;
+}
+
+.price {
+    color: var(--primaryColor);
+}
+
+.detail-desc i {
+    font-size: 24px;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--blackColor);
+    border: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.detail-card:hover .detail-img {
+    filter: opacity(1);
+}
+
+.detail-card:hover .detail-name h4 {
+    color: var(--primaryColor);
+}
+
+/* mobile view */
+@media screen and (max-width:640px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: var(--whiteColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 3;
+        color: var(--primaryColor);
+    }
+
+    .sidebar.active {
+        display: flex;
+        z-index: 10;
+    }
+}

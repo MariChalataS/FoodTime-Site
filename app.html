@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodTime</title>
+    <link rel="shortcut icon" href="https://media.istockphoto.com/id/928783358/vector/food-time.jpg?s=170667a&w=0&k=20&c=oSOyymd7xkC0LPnEEMNLzo9K1eCcBtsmQF60wifSEmI=" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ 
+<!--sidebar-->
+<div class="sidebar">
+    <h1 class="logo" style="cursor: pointer;">Food<span style="color: #df6eee;">Time</span></h1>
+    <div class="sidebar-nav">
+        <a href="#"><i class='bx bx-home-heart'></i>Home</a>
+        <a href="#"><i class='bx bx-receipt'></i>Bills</a>
+        <a href="#"><i class='bx bx-wallet-alt'></i>Wallet</a>
+        <a href="#"><i class='bx bx-bell' ></i>Notification</a>
+        <a href="#"><i class='bx bxs-contact' ></i>Contact Us</a>
+        <a href="#"><i class='bx bx-cog' ></i>Settings</a>
+    </div>
+    <div class="sidebar-logout">
+        <a href="#"><i class='bx bx-log-out'></i>Logout</a>
+    </div>
+</div>
+
+<!--Main-->
+<div class="main">
+    <!--main header-->
+    <div class="main-header">
+        <a href="#" class="menu-toggle"><i class='bx bx-menu' ></i></a>
+        <div class="search">
+            <input type="text" placeholder="What would you like to eat?">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="profile">
+            <a href="#" class="cart"><i class='bx bx-cart-add' ></i></a>
+            <a href="#" class="user"><i class='bx bx-user-plus'></i></a>
+        </div>
+    </div>
+
+    <!--main highlight-->
+<div class="main-highlight">
+    <div class="main-head">
+        <h3 class="main-title">Recommendation</h3>
+        <div class="highlight-arrow">
+            <a href="#" class="back"><i class='bx bx-left-arrow-circle' ></i></a>
+            <a href="#" class="next"><i class='bx bx-right-arrow-circle'></i></a>
+        </div>
+    </div>
+    <div class="highlight-wrapper">
+        <div class="highlight-card">
+            <img class="highlight-img" src="Images/fresh salad.jpg">
+            <div class="highlight-desc">
+                <h4>Fresh Salad</h4>
+                <p>19.00 GEL</p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="Images/cafe latte.jpg">
+            <div class="highlight-desc">
+                <h4>Cafe Latte</h4>
+                <p>12.00 GEL</p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="Images/steak.jpg">
+            <div class="highlight-desc">
+                <h4>Premium Steak</h4>
+                <p>26.00 GEL</p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="Images/big burger.jpg">
+            <div class="highlight-desc">
+                <h4>Big Burger</h4>
+                <p>29.00 GEL</p>
+            </div>
+        </div>
+    </div>
+</div>
+   
+<!--main menus-->
+<div class="main-menus">
+    <!--filter section-->
+    <div class="main-filter">
+        <div style="text-align: center;">
+            <h2 class="main-title"><span>Main</span> <br>Category </h2>
+            <div class="highlight-arrow">
+                <a href="#"><i class='bx bx-left-arrow-circle'></i></a>
+                <a href="#"><i class='bx bx-right-arrow-circle'></i></a>
+            </div>
+        </div>
+        <div class="filter-wrapper">
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class='bx bx-restaurant' ></i>                     
+                </div>
+                <p>All Menus</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class='bx bx-cookie'></i>                      
+                </div>
+                <p>Cookie</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class='bx bxs-pizza' ></i>                      
+                </div>
+                <p>Pizza</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class='bx bx-wine'></i>                      
+                </div>
+                <p>Wine</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class='bx bx-coffee'></i>                      
+                </div>
+                <p>Coffee</p>
+            </div>
+            <div class="filter-card">
+                <div class="filter-icon">
+                    <i class='bx bx-sushi'></i>                      
+                </div>
+                <p>Sushi</p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+    <!--list of foods / main detail-->
+    <div class="main-detail">
+        <h2 class="main-title">Choose Order</h2>
+        <div class="detail-wrapper">
+            <div class="detail-card">
+                <img class="detail-img" src="Images/shrimp soup.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4 class="detail-sub">Shrimp Soup</h4>
+                        <p class="price">39.00 GEL</p>
+                    </div>
+                    <i class='bx bx-heart'></i>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="Images/fresh salad.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4 class="detail-sub">Fresh Salad</h4>
+                        <p class="price">19.00 GEL</p>
+                    </div>
+                    <i class='bx bx-heart'></i>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="Images/pizza.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4 class="detail-sub">Pizza</h4>
+                        <p class="price">17.00 GEL</p>
+                    </div>
+                    <i class='bx bx-heart'></i>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="Images/wine.webp">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4 class="detail-sub">Wine</h4>
+                        <p class="price">79.00 GEL</p>
+                    </div>
+                    <i class='bx bx-heart'></i>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="Images/big burger.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4 class="detail-sub">Big Burger</h4>
+                        <p class="price">29.00 GEL</p>
+                    </div>
+                    <i class='bx bx-heart'></i>
+                </div>
+            </div>
+            <div class="detail-card">
+                <img class="detail-img" src="Images/cafe latte.jpg">
+                <div class="detail-desc">
+                    <div class="detail-name">
+                        <h4 class="detail-sub">Cafe Latte</h4>
+                        <p class="price">12.00 GEL</p>
+                    </div>
+                    <i class='bx bx-heart'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
